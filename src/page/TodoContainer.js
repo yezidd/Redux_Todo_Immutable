@@ -7,7 +7,13 @@ export default class TodoContainer extends Component {
   render() {
     return (
       <div>
-          <p>123123</p>
+        <input
+          placeholder="请输入todo数量"
+
+        />
+        <button>点击添加</button>
+
+        <Filter/>
       </div>
     );
   }
