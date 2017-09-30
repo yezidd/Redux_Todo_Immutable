@@ -10,7 +10,7 @@ export default function todo(state = List([]), action) {
       return state.splice(action.index, 0);
       break;
     case COM_TODO:
-      return state.set(action.index, {todo: state.get(action.index).todo, completed: true})
+      return state.set(action.index, {todo: state.get(action.index).todo, completed: !state.get(action.index).completed})
       break;
     default:
       return state;
