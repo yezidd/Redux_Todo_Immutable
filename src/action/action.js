@@ -31,3 +31,12 @@ export function setFilter(filter) {
     filter: filter
   }
 }
+
+//这个是切换状态的时候，在action前面增加的异步函数
+export function syncComTodo(index) {
+  //就不返回dispatch和state了，返回一个store看一下
+  return (store) => {
+    console.log(store);
+    store.dispatch(comTodo(index));
+  }
+}

@@ -17,7 +17,6 @@ class Filter extends Component {
         <button onClick={() => this.filter(VisibilityFilters.SHOW_COMPLETED)}>COMPLETED</button>
 
         <button onClick={() => this.filter(VisibilityFilters.SHOW_ACTIVE)}>ACTIVE</button>
-
       </div>
     )
   }

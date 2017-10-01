@@ -1,13 +1,15 @@
 import React, {Component} from 'react';
 import {connect} from "react-redux";
-import {comTodo} from "../action/action";
+import {comTodo, syncComTodo} from "../action/action";
 import './TodoItem.css'
 
 class TodoItem extends Component {
   toggle = () => {
     console.log(this.props.index);
     const {dispatch, index} = this.props;
-    dispatch(comTodo(index));
+    //为了验证是否可以编写正确我的中间件
+
+    dispatch(syncComTodo(index));
   };
 
   render() {

@@ -21,6 +21,7 @@ class TodoContainer extends Component {
         <input
           placeholder="请输入todo数量"
           ref="todo"
+
         />
         <button onClick={this.add}>点击添加</button>
         {
